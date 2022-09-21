@@ -18,6 +18,15 @@ body {
     background-repeat: no-repeat;
     background-color: var(--Violet);
 }
+
+@media only screen and (min-width: 1440px) { 
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -35,7 +44,7 @@ img {
     text-align: center;
     font-size: 1.6rem;
     font-family: var(--FontBody);
-    padding: 1.5rem;
+    padding: 1.2rem;
     display: block;
     border-radius: 2.5rem;
 }
@@ -49,13 +58,45 @@ img {
     width: 45%;
 }
 
+@media only screen and (min-width: 1440px) { 
+    .logo {
+        width: 20%;
+    }
+}
+
 .content {
     margin-bottom: 6rem;
 }
 
-.content-image {
-    margin-bottom: 6rem;
+@media only screen and (min-width: 1440px) {     
+    .content {
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5rem;
+    }
 }
+
+.content-image {
+    margin-bottom: 6rem;    
+}
+
+@media only screen and (min-width: 1440px) {     
+    .content-image {
+        margin-bottom: 0; 
+    }
+}
+
+.grid-image {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1440px) {     
+    .main-content {
+        margin-top: 2.5rem; 
+    }
+}
+
 
 .content-title {
     font-family: var(--FontHeading);
@@ -63,6 +104,13 @@ img {
     font-size: 2.4rem;
     line-height: 1.5;
     text-align: center;
+}
+
+@media only screen and (min-width: 1440px) {     
+    .content-title {
+        text-align: start;
+        width: 45%;
+    }
 }
 
 .content-text {
@@ -74,7 +122,21 @@ img {
     margin-bottom: 2rem;
 }
 
+@media only screen and (min-width: 1440px) {     
+    .content-text {
+        text-align: start;
+        width: 70%;
+    }
+}
+
 .content-link {
     width: 80%;
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 1440px) {     
+    .content-link {
+        width: 25%;
+        margin: 0;
+    }
 }
