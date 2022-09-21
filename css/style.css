@@ -47,6 +47,7 @@ img {
     padding: 1.2rem;
     display: block;
     border-radius: 2.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .header {
@@ -148,6 +149,13 @@ img {
     margin-bottom: 2rem;
 }
 
+@media only screen and (min-width: 1440px) {     
+    .footer {
+        margin: 4rem 15rem; 
+        justify-content: flex-end;
+    }
+}
+
 
 .footer-icon {
     width: 5rem;
@@ -167,4 +175,3 @@ img {
     align-items: center;
     filter: brightness(0) invert(1);;
 }
-
